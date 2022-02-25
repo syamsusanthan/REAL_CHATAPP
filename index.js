@@ -7,13 +7,13 @@ const chatuser=require('./src/model/chatuser');
 const jwt=require('jsonwebtoken');
 const path=require('path')
 let app = express();
-app.use(express.static('./dist/frontend'))
 app.use(cors());
 app.use(bp.json());
+app.use(express.static('./dist/frontend'))
+
 let http = require('http');
 let server = http.Server(app);
 let socketIO = require('socket.io');
-const { findByIdAndDelete } = require('./src/model/signdata');
 let io = socketIO(server);
 const port = process.env.PORT || 3600;
 
