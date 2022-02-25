@@ -15,7 +15,7 @@ let http = require('http');
 let server = http.Server(app);
 let socketIO = require('socket.io');
 let io = socketIO(server);
-const port = process.env.PORT || 3600;
+const port = process.env.PORT || 3000;
 
 
 io.on('connection', (socket) => {
@@ -160,8 +160,8 @@ app.post('/api/room',async(req,res)=>{
 }
 });
 
-app.get('/*',(req,res)=>{
-    res.sendFile(path.join(__dirname + "/dist/frontend/index.html"))
+app.get('/*',function (req,res){
+    res.sendFile(path.join(__dirname + '/dist/frontend/index.html'))
 })
 
 server.listen(port, () => {
