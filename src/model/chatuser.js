@@ -4,7 +4,9 @@ const schema=mongoose.Schema;
 const userSchema=new schema({
     selectedName:String,
     selectedPhone:String,
-    selectedRoom:String
+    selectedRoom:String,
+    block:Boolean,
+    mute:Boolean
 });
 var chatuser=mongoose.model('chatuser',userSchema);
 module.exports=chatuser;

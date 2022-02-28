@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-mongoose.connect('mongodb://localhost:27017/CHATAPP',{useNewUrlParser:true, useUnifiedTopology:true});
+mongoose.connect('mongodb+srv://userone:userone@syamsfile.jor9c.mongodb.net/CHATAPP?retryWrites=true&w=majority',{useNewUrlParser:true, useUnifiedTopology:true});
 const schema=mongoose.Schema;
 const messageSchema=new schema({
     sender:String,

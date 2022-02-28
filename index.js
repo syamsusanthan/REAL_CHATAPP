@@ -14,8 +14,9 @@ app.use(express.static('./dist/frontend'))
 let http = require('http');
 let server = http.Server(app);
 let socketIO = require('socket.io');
+const messagedata = require('./src/model/messagedata');
 let io = socketIO(server);
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3600;
 
 
 io.on('connection', (socket) => {
@@ -25,10 +26,29 @@ io.on('connection', (socket) => {
     });
 
     socket.on('message', (data) => {
-        io.in(data.room).emit('new message', {user: data.user, message: data.message, toUser:data.toUser});
+        io.in(data.room).emit('new message', {user: data.user, message: data.message, toUser:data.toUser,userName:data.userName});
     });
-    socket.on('room message', (data) => {
-        io.emit('new room message', {user: data.user, message: data.message, toUser:data.toUser});
+    socket.on('room message',async (data) => {
+       try{
+           io.emit('new room message', {user: data.user, message: data.message, userName:data.userName});
+        } 
+        catch{
+        }
+       
+    });
+
+    socket.on('deleteUser',async (data)=>{
+        var signselect=await signdata.findOne({"phone":data.userId});
+        var chatselect=await chatuser.findOne({"selectedPhone":data.userId});
+        var roomselect=await roomsdata.findOne({"roomsId":data.userId});
+        signdata.findByIdAndDelete({_id:signselect._id},{new:true, useFindAndModify:false}).then(()=>{});
+        chatuser.findByIdAndDelete({_id:chatselect._id},{new:true, useFindAndModify:false}).then(()=>{});
+        roomsdata.findByIdAndDelete({_id:roomselect._id},{new:true, useFindAndModify:false}).then(()=>{});
+    });
+
+    socket.on('deleteRoom',async (data)=>{
+        var select=await roomsdata.findOne({"room":data.roomId});
+        roomsdata.findByIdAndDelete({_id:select._id},{new:true, useFindAndModify:false}).then(()=>{});
     });
 
     socket.on('selection', async (data) => {
@@ -36,15 +56,20 @@ io.on('connection', (socket) => {
             var selection={
                 selectedName:data.selectedName,
                 selectedPhone:data.selectedPhone,
-                selectedRoom:data.selectedRoom
+                selectedRoom:data.roomId
             }
             var select=await chatuser.findOne({"selectedPhone":selection.selectedPhone});
            if(select){
-            io.in(data.room).emit('already',{msg2:'already'});
+            if(select.selectedRoom!=data.roomId){
+                await chatuser.findByIdAndUpdate({_id:select._id},{$set:{
+                    selectedRoom:data.roomId
+                }},{new:true, useFindAndModify:false})
+                .then(()=>{});
+            }
            }
            else{
             var selectdata=chatuser(selection);
-            selectdata.save();
+            selectdata.save();console.log('saved');
            }
         }
         catch(e){
@@ -56,16 +81,58 @@ io.on('connection', (socket) => {
     socket.on('deselection',async (data) => {
         var select=await chatuser.findOne({"selectedPhone":data.selectedPhone});
         if(select){
-        chatuser.findByIdAndDelete({_id:select._id},{new:true, useFindAndModify:false}).then(()=>{})
+        chatuser.findByIdAndDelete({_id:select._id},{new:true, useFindAndModify:false}).then(()=>{});
         }
         else{
-            console.log('deselect')
         }
+    });
+    socket.on('block',async (data)=>{
+        var select=await chatuser.findOne({"selectedPhone":data.selectedphone});
+        if(select){
+            chatuser.findByIdAndUpdate({_id:select._id},{$set:{
+                block:data.blockdata
+            }},{new:true, useFindAndModify:false})
+            .then(()=>{});
+            io.emit('already',{blockedno:data.selectedphone, blockmessage:data.blockdata});
+        }
+    });
+    socket.on('unblock',async (data)=>{
+        var select=await chatuser.findOne({"selectedPhone":data.selectedphone});
+        if(select){
+            chatuser.findByIdAndUpdate({_id:select._id},{$set:{
+                block:data.blockdata
+            }},{new:true, useFindAndModify:false})
+            .then(()=>{});
+            io.emit('already',{blockedno:data.selectedphone, blockmessage:data.blockdata})
+        }
+    });
+    socket.on('mute',async (data)=>{
+        var select=await chatuser.findOne({"selectedPhone":data.selectedphone});
+        if(select){
+            chatuser.findByIdAndUpdate({_id:select._id},{$set:{
+                mute:data.mutedata
+            }},{new:true, useFindAndModify:false})
+            .then(()=>{});
+            io.emit('already',{blockedno:data.selectedphone, blockmessage:data.blockdata})
+        }
+    });
+    socket.on('unmute',async (data)=>{
+        try{
+            var unmute=await chatuser.findOne({"selectedPhone":data.selectedphone});
+            if(unmute){
+                chatuser.findByIdAndUpdate({_id:unmute._id},{$set:{
+                    mute:data.mutedata
+                }},{new:true, useFindAndModify:false})
+                .then(()=>{});
+                io.emit('already',{blockedno:data.selectedphone, blockmessage:data.blockdata})
+            }
+        }
+        catch(e){}
+   
     });
 });
 
 app.post('/api/log',async (req,res)=>{
-    
     try{
         var phone=req.body.phone;
         var password=req.body.password;
@@ -96,7 +163,9 @@ app.post('/api/sin',async(req,res)=>{
        var userdata={
         name:req.body.name,
         phone:req.body.phone,
-        password:req.body.password
+        password:req.body.password,
+        block:req.body.block,
+        mute:req.body.mute
        }
         var user=await signdata.findOne({phone:userdata.phone}); 
         if(user){
@@ -121,7 +190,7 @@ app.get('/api/get',(req,res)=>{
         roomList=roomsList;
         chatuser.find().then((roomsUserList)=>{
             roomUserList=roomsUserList;
-            return res.send({uList:userList,rList:roomList,chatUserList:roomUserList});
+                return res.send({uList:userList,rList:roomList,chatUserList:roomUserList});
         })
       
      });
