@@ -223,7 +223,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const _c0 = ["messagecontainer"];
 function ChatroomComponent_button_3_Template(rf, ctx) { if (rf & 1) {
     const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 17);
@@ -262,79 +261,79 @@ function ChatroomComponent_div_13_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r1.roomAdmin[0].userId == ctx_r1.userId);
 } }
 function ChatroomComponent_ng_container_24_div_5_p_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p", 39);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p", 38);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const name_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+    const name_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", name_r14 == null ? null : name_r14.selectedName, ",");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", name_r13 == null ? null : name_r13.selectedName, ",");
 } }
 function ChatroomComponent_ng_container_24_div_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 37);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, ChatroomComponent_ng_container_24_div_5_p_1_Template, 2, 1, "p", 38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 36);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, ChatroomComponent_ng_container_24_div_5_p_1_Template, 2, 1, "p", 37);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const name_r14 = ctx.$implicit;
+    const name_r13 = ctx.$implicit;
     const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", name_r14.selectedRoom == ctx_r11.roomId);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", name_r13.selectedRoom == ctx_r11.roomId);
 } }
-function ChatroomComponent_ng_container_24_div_8_label_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "label", 45);
+function ChatroomComponent_ng_container_24_div_7_label_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "label", 44);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const item_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+    const item_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r17 == null ? null : item_r17.userName);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r16 == null ? null : item_r16.userName);
 } }
-function ChatroomComponent_ng_container_24_div_8_label_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "label", 46);
+function ChatroomComponent_ng_container_24_div_7_label_4_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "label", 45);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "You");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
-function ChatroomComponent_ng_container_24_div_8_label_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "label", 47);
+function ChatroomComponent_ng_container_24_div_7_label_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "label", 46);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "muted");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
-function ChatroomComponent_ng_container_24_div_8_p_6_Template(rf, ctx) { if (rf & 1) {
+function ChatroomComponent_ng_container_24_div_7_p_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const item_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+    const item_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r17 == null ? null : item_r17.message);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](item_r16 == null ? null : item_r16.message);
 } }
-function ChatroomComponent_ng_container_24_div_8_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 40);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 41);
+function ChatroomComponent_ng_container_24_div_7_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 39);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 40);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, ChatroomComponent_ng_container_24_div_8_label_3_Template, 2, 1, "label", 42);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, ChatroomComponent_ng_container_24_div_8_label_4_Template, 2, 0, "label", 43);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, ChatroomComponent_ng_container_24_div_8_label_5_Template, 2, 0, "label", 44);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, ChatroomComponent_ng_container_24_div_7_label_3_Template, 2, 1, "label", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, ChatroomComponent_ng_container_24_div_7_label_4_Template, 2, 0, "label", 42);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, ChatroomComponent_ng_container_24_div_7_label_5_Template, 2, 0, "label", 43);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, ChatroomComponent_ng_container_24_div_8_p_6_Template, 2, 1, "p", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, ChatroomComponent_ng_container_24_div_7_p_6_Template, 2, 1, "p", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "br");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const item_r17 = ctx.$implicit;
-    const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", (item_r17 == null ? null : item_r17.user) !== ctx_r13.currentPhone && "same-user");
+    const item_r16 = ctx.$implicit;
+    const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", (item_r16 == null ? null : item_r16.user) !== ctx_r12.currentPhone && "same-user");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", item_r17.user != ctx_r13.userId);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", item_r16.user != ctx_r12.userId);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", item_r17.user == ctx_r13.userId);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", item_r16.user == ctx_r12.userId);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r13.mutedUser != "" && item_r17.user != ctx_r13.userId);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r12.mutedUser != "" && item_r16.user != ctx_r12.userId);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r13.mutedUser == "" || item_r17.user == ctx_r13.userId);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r12.mutedUser == "" || item_r16.user == ctx_r12.userId);
 } }
 function ChatroomComponent_ng_container_24_Template(rf, ctx) { if (rf & 1) {
-    const _r25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    const _r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 24);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h6", 25);
@@ -344,22 +343,22 @@ function ChatroomComponent_ng_container_24_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, ChatroomComponent_ng_container_24_div_5_Template, 2, 1, "div", 27);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 28, 29);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, ChatroomComponent_ng_container_24_div_8_Template, 8, 5, "div", 30);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 28);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](7, ChatroomComponent_ng_container_24_div_7_Template, 8, 5, "div", 29);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 31);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 30);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 31);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 32);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 33);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "input", 34);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function ChatroomComponent_ng_container_24_Template_input_ngModelChange_13_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r25); const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r24.messageText = $event; })("keyup", function ChatroomComponent_ng_container_24_Template_input_keyup_13_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r25); const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return $event.keyCode === 13 && ctx_r26.sendMessage(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "input", 33);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function ChatroomComponent_ng_container_24_Template_input_ngModelChange_12_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r24); const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r23.messageText = $event; })("keyup", function ChatroomComponent_ng_container_24_Template_input_keyup_12_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r24); const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return $event.keyCode === 13 && ctx_r25.sendMessage(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 35);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "button", 36);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ChatroomComponent_ng_container_24_Template_button_click_15_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r25); const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r27.sendMessage(); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Send ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 34);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "button", 35);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ChatroomComponent_ng_container_24_Template_button_click_14_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r24); const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r26.sendMessage(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "Send ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -369,7 +368,7 @@ function ChatroomComponent_ng_container_24_Template(rf, ctx) { if (rf & 1) {
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r2.roomUserList);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r2.messageArray);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx_r2.messageText);
@@ -417,10 +416,6 @@ class ChatroomComponent {
                 }, 500);
             }
         });
-    }
-    ngAfterViewInit() {
-        this.mContainer.nativeElement.scrollTop =
-            this.mContainer.nativeElement.scrollHeight;
     }
     logout() {
         localStorage.clear();
@@ -485,12 +480,7 @@ class ChatroomComponent {
     }
 }
 ChatroomComponent.ɵfac = function ChatroomComponent_Factory(t) { return new (t || ChatroomComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbModal"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_home_chat_chat_service__WEBPACK_IMPORTED_MODULE_2__["ChatService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_get_service__WEBPACK_IMPORTED_MODULE_3__["GetService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"])); };
-ChatroomComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ChatroomComponent, selectors: [["app-chatroom"]], viewQuery: function ChatroomComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
-    } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.mContainer = _t.first);
-    } }, decls: 25, vars: 5, consts: [[2, "display", "flex"], [2, "font-family", "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", "font-size", "65px", "color", "rgb(14, 11, 11)", "margin-top", "2%", "margin-left", "7%"], ["style", "border-radius: 5px;background-color: rgb(1, 221, 250); height: 40px; padding: 10px; margin-left: 40%;margin-top: 40px;font-weight: bold;", "type", "button", 3, "click", 4, "ngIf"], [1, "container-fluid"], [1, "row"], [1, "col-md-4"], [1, "user-list-card", 2, "width", "80%"], [2, "font-family", "Verdana, Geneva, Tahoma, sans-serif", "background-color", "rgba(6, 7, 7, 0.699)", "height", "50px", "border-radius", "5px", "padding", "5px"], [2, "color", "rgb(248, 230, 230)", "font-size", "20px", "padding", "5px"], ["class", "user-card", 3, "ngClass", 4, "ngFor", "ngForOf"], [1, "col-md-8"], [2, "border", "2px solid black", "display", "flex", "background-color", "rgb(16, 180, 153)", "border-radius", "4px", "padding", "2px"], [2, "margin-top", "10px", "margin-left", "20px", "color", "white", "font-weight", "bold"], [2, "font-size", "30px", "margin-top", "10px", "margin-left", "60px", "font-family", "Verdana, Geneva, Tahoma, sans-serif", "color", "white"], [2, "border-radius", "5px", "border-style", "ridge", "padding", "5px", "font-size", "12px", "font-weight", "bold", "background-color", "rgb(142, 142, 143)", "color", "white", "height", "30px", "margin-top", "20px", "margin-left", "35%", 3, "click"], [1, "chat-container"], [4, "ngIf"], ["type", "button", 2, "border-radius", "5px", "background-color", "rgb(1, 221, 250)", "height", "40px", "padding", "10px", "margin-left", "40%", "margin-top", "40px", "font-weight", "bold", 3, "click"], [1, "user-card", 3, "ngClass"], ["style", "width: 100%;", 4, "ngIf"], [2, "width", "100%"], [2, "display", "flex", "background-color", "rgb(99, 135, 252)", "cursor", "pointer", "width", "100%", "border-radius", "5px", "padding", "10px", 3, "click"], [1, "selected", 3, "ngClass"], [1, "username", 2, "font-size", "14px"], [1, "chat-header"], [2, "color", "white", "background-color", "rgb(39, 85, 211)", "margin-left", "25px", "margin-top", "10px", "border-radius", "5px", "padding", "6px"], [2, "margin-left", "20px"], ["style", "display: inline-flex;", 4, "ngFor", "ngForOf"], [1, "chat-body"], ["messageContainer", ""], [3, "ngClass", 4, "ngFor", "ngForOf"], [1, "chat-footer"], [1, "col-md-10"], [1, "form-group", "mb-0"], ["type", "text", "placeholder", "Type a message", 1, "form-control", 3, "ngModel", "ngModelChange", "keyup"], [1, "col-md-2", "text-center", "align-self-center"], [1, "btn", "btn-primary", "btn-sm", "px-3", 3, "click"], [2, "display", "inline-flex"], ["style", "font-size: 15px;color: black;margin-left: 7px;", "class", "username", 4, "ngIf"], [1, "username", 2, "font-size", "15px", "color", "black", "margin-left", "7px"], [3, "ngClass"], [1, "message-container"], ["style", "color: rgba(0, 0, 0, 0.431);font-size: 12px;justify-content: right;font-weight: bold;", 4, "ngIf"], ["style", "color: rgba(0, 0, 0, 0.452);font-size: 12px;justify-content: right;font-weight: bold;", 4, "ngIf"], ["style", "font-size: 12px;font-style: italic;", 4, "ngIf"], [2, "color", "rgba(0, 0, 0, 0.431)", "font-size", "12px", "justify-content", "right", "font-weight", "bold"], [2, "color", "rgba(0, 0, 0, 0.452)", "font-size", "12px", "justify-content", "right", "font-weight", "bold"], [2, "font-size", "12px", "font-style", "italic"]], template: function ChatroomComponent_Template(rf, ctx) { if (rf & 1) {
+ChatroomComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ChatroomComponent, selectors: [["app-chatroom"]], decls: 25, vars: 5, consts: [[2, "display", "flex"], [2, "font-family", "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif", "font-size", "65px", "color", "rgb(14, 11, 11)", "margin-top", "2%", "margin-left", "7%"], ["style", "border-radius: 5px;background-color: rgb(1, 221, 250); height: 40px; padding: 10px; margin-left: 40%;margin-top: 40px;font-weight: bold;", "type", "button", 3, "click", 4, "ngIf"], [1, "container-fluid"], [1, "row"], [1, "col-md-4"], [1, "user-list-card", 2, "width", "80%"], [2, "font-family", "Verdana, Geneva, Tahoma, sans-serif", "background-color", "rgba(6, 7, 7, 0.699)", "height", "50px", "border-radius", "5px", "padding", "5px"], [2, "color", "rgb(248, 230, 230)", "font-size", "20px", "padding", "5px"], ["class", "user-card", 3, "ngClass", 4, "ngFor", "ngForOf"], [1, "col-md-8"], [2, "border", "2px solid black", "display", "flex", "background-color", "rgb(16, 180, 153)", "border-radius", "4px", "padding", "2px"], [2, "margin-top", "10px", "margin-left", "20px", "color", "white", "font-weight", "bold"], [2, "font-size", "30px", "margin-top", "10px", "margin-left", "60px", "font-family", "Verdana, Geneva, Tahoma, sans-serif", "color", "white"], [2, "border-radius", "5px", "border-style", "ridge", "padding", "5px", "font-size", "12px", "font-weight", "bold", "background-color", "rgb(142, 142, 143)", "color", "white", "height", "30px", "margin-top", "20px", "margin-left", "35%", 3, "click"], [1, "chat-container"], [4, "ngIf"], ["type", "button", 2, "border-radius", "5px", "background-color", "rgb(1, 221, 250)", "height", "40px", "padding", "10px", "margin-left", "40%", "margin-top", "40px", "font-weight", "bold", 3, "click"], [1, "user-card", 3, "ngClass"], ["style", "width: 100%;", 4, "ngIf"], [2, "width", "100%"], [2, "display", "flex", "background-color", "rgb(99, 135, 252)", "cursor", "pointer", "width", "100%", "border-radius", "5px", "padding", "10px", 3, "click"], [1, "selected", 3, "ngClass"], [1, "username", 2, "font-size", "14px"], [1, "chat-header"], [2, "color", "white", "background-color", "rgb(39, 85, 211)", "margin-left", "25px", "margin-top", "10px", "border-radius", "5px", "padding", "6px"], [2, "margin-left", "20px"], ["style", "display: inline-flex;", 4, "ngFor", "ngForOf"], [1, "chat-body"], [3, "ngClass", 4, "ngFor", "ngForOf"], [1, "chat-footer"], [1, "col-md-10"], [1, "form-group", "mb-0"], ["type", "text", "placeholder", "Type a message", 1, "form-control", 3, "ngModel", "ngModelChange", "keyup"], [1, "col-md-2", "text-center", "align-self-center"], [1, "btn", "btn-primary", "btn-sm", "px-3", 3, "click"], [2, "display", "inline-flex"], ["style", "font-size: 15px;color: black;margin-left: 7px;", "class", "username", 4, "ngIf"], [1, "username", 2, "font-size", "15px", "color", "black", "margin-left", "7px"], [3, "ngClass"], [1, "message-container"], ["style", "color: rgba(0, 0, 0, 0.431);font-size: 12px;justify-content: right;font-weight: bold;", 4, "ngIf"], ["style", "color: rgba(0, 0, 0, 0.452);font-size: 12px;justify-content: right;font-weight: bold;", 4, "ngIf"], ["style", "font-size: 12px;font-style: italic;", 4, "ngIf"], [2, "color", "rgba(0, 0, 0, 0.431)", "font-size", "12px", "justify-content", "right", "font-weight", "bold"], [2, "color", "rgba(0, 0, 0, 0.452)", "font-size", "12px", "justify-content", "right", "font-weight", "bold"], [2, "font-size", "12px", "font-style", "italic"]], template: function ChatroomComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "REAL TIME CHAT APP");
@@ -526,7 +516,7 @@ ChatroomComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](24, ChatroomComponent_ng_container_24_Template, 17, 3, "ng-container", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](24, ChatroomComponent_ng_container_24_Template, 16, 3, "ng-container", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -550,10 +540,7 @@ ChatroomComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
                 templateUrl: './chatroom.component.html',
                 styleUrls: ['./chatroom.component.scss']
             }]
-    }], function () { return [{ type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbModal"] }, { type: _home_chat_chat_service__WEBPACK_IMPORTED_MODULE_2__["ChatService"] }, { type: _get_service__WEBPACK_IMPORTED_MODULE_3__["GetService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }]; }, { mContainer: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
-            args: ['messagecontainer']
-        }] }); })();
+    }], function () { return [{ type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbModal"] }, { type: _home_chat_chat_service__WEBPACK_IMPORTED_MODULE_2__["ChatService"] }, { type: _get_service__WEBPACK_IMPORTED_MODULE_3__["GetService"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] }]; }, null); })();
 
 
 /***/ }),
